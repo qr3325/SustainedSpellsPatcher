@@ -171,6 +171,10 @@ namespace SustainedSpellsPatcher
                             }
                         }
                     }
+                    else if (magicEffect.Archetype.ActorValue == ActorValue.Variable09)
+                    {
+                        return SpellArchetypeType.FortifyHealth;
+                    }
                     else if (magicEffect.Keywords != null)
                     {
                         if (magicEffect.Keywords.Contains(FormKey.Factory("01EA72:Skyrim.esm")))
